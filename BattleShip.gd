@@ -45,10 +45,11 @@ func change_seat(seat_id):
 	if seat_id < 1:
 		print("erreur de fauteuil")
 		return
-	var cameras = [$CaptainCamera, $CannonRFCamera, $CannonLFCamera, $CannonRBCamera, $CannonLBCamera]
-	var current_camera = cameras[seat_id - 1]
 	
-	current_camera.current = true
+	var cameras = [$CaptainCamera, $CannonRF, $CannonLF, $CannonRB, $CannonLB]
+	var next_camera = cameras[seat_id - 1]
+
+	next_camera.current = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Spatial.gd" type="Script" id=1]
 [ext_resource path="res://BattleShip.gd" type="Script" id=2]
+[ext_resource path="res://Cannon.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -15,17 +16,21 @@ script = ExtResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5 )
 current = true
 
-[node name="CannonRFCamera" type="Camera" parent="BattleShip"]
+[node name="CannonRF" parent="BattleShip" instance=ExtResource( 3 )]
 transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 4, 0, -2 )
+visible = false
 
-[node name="CannonLFCamera" type="Camera" parent="BattleShip"]
+[node name="CannonLF" parent="BattleShip" instance=ExtResource( 3 )]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -4, 0, -2 )
+visible = false
 
-[node name="CannonRBCamera" type="Camera" parent="BattleShip"]
+[node name="CannonRB" parent="BattleShip" instance=ExtResource( 3 )]
 transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 4, 0, 2 )
+visible = false
 
-[node name="CannonLBCamera" type="Camera" parent="BattleShip"]
+[node name="CannonLB" parent="BattleShip" instance=ExtResource( 3 )]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -4, 0, 2 )
+visible = false
 
 [node name="Asteroids" type="Spatial" parent="."]
 
