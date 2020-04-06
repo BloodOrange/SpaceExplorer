@@ -3,8 +3,7 @@
 [ext_resource path="res://Spatial.gd" type="Script" id=1]
 [ext_resource path="res://BattleShip.gd" type="Script" id=2]
 [ext_resource path="res://Cannon.tscn" type="PackedScene" id=3]
-
-[sub_resource type="CubeMesh" id=1]
+[ext_resource path="res://Asteroid.tscn" type="PackedScene" id=4]
 
 [node name="Spatial" type="Spatial"]
 script = ExtResource( 1 )
@@ -18,498 +17,206 @@ current = true
 
 [node name="CannonRF" parent="BattleShip" instance=ExtResource( 3 )]
 transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 4, 0, -2 )
-visible = false
 
 [node name="CannonLF" parent="BattleShip" instance=ExtResource( 3 )]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -4, 0, -2 )
-visible = false
 
 [node name="CannonRB" parent="BattleShip" instance=ExtResource( 3 )]
 transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 4, 0, 2 )
-visible = false
 
 [node name="CannonLB" parent="BattleShip" instance=ExtResource( 3 )]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -4, 0, 2 )
-visible = false
 
 [node name="Asteroids" type="Spatial" parent="."]
 
-[node name="MeshInstance" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.762205, 0, -0.647335, -0.198673, 0.951739, -0.233927, 0.616094, 0.306908, 0.725421, 0, 0, -27.0796 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance2" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.762205, 0, -0.647335, -0.198673, 0.951739, -0.233927, 0.616094, 0.306908, 0.725421, -22.3425, 0, 12.9325 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance3" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.762205, 0, -0.647335, -0.198673, 0.951739, -0.233927, 0.616094, 0.306908, 0.725421, 33.6084, 0, 24.1652 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance6" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.762205, 0, -0.647335, -0.198673, 0.951739, -0.233927, 0.616094, 0.306908, 0.725421, 21.7584, 0, -16.8576 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance5" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.762205, 0, -0.647335, -0.198673, 0.951739, -0.233927, 0.616094, 0.306908, 0.725421, -36.9455, 0, -27.3717 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance4" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.762205, 0, -0.647335, -0.198673, 0.951739, -0.233927, 0.616094, 0.306908, 0.725421, 10.9738, 0, 19.0542 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance12" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.823159, -0.291586, -0.487223, -0.198673, 0.951739, -0.233927, 0.531919, -0.0957614, -0.841363, -6.04345, 0, -46.9254 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance11" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.823159, -0.291586, -0.487223, -0.198673, 0.951739, -0.233927, 0.531919, -0.0957614, -0.841363, -37.0867, 0, -80.637 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance10" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.823159, -0.291586, -0.487223, -0.198673, 0.951739, -0.233927, 0.531919, -0.0957614, -0.841363, -65.2165, 0, -30.9842 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance9" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.823159, -0.291586, -0.487223, -0.198673, 0.951739, -0.233927, 0.531919, -0.0957614, -0.841363, -22.5443, 0, -29.4427 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance8" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.823159, -0.291586, -0.487223, -0.198673, 0.951739, -0.233927, 0.531919, -0.0957614, -0.841363, 5.76177, 0, -81.9352 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance7" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.823159, -0.291586, -0.487223, -0.198673, 0.951739, -0.233927, 0.531919, -0.0957614, -0.841363, -53.2981, 0, -50.8941 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance24" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.775919, 0.298558, 0.555709, -0.198673, 0.951739, -0.233927, -0.59873, 0.0711044, 0.797788, 110.046, 0, -69.6927 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance23" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.775919, 0.298558, 0.555709, -0.198673, 0.951739, -0.233927, -0.59873, 0.0711044, 0.797788, 143.793, 0, -38.688 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance22" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.775919, 0.298558, 0.555709, -0.198673, 0.951739, -0.233927, -0.59873, 0.0711044, 0.797788, 167.683, 0, -90.5143 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance21" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.775919, 0.298558, 0.555709, -0.198673, 0.951739, -0.233927, -0.59873, 0.0711044, 0.797788, 125.031, 0, -88.4909 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance20" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.775919, 0.298558, 0.555709, -0.198673, 0.951739, -0.233927, -0.59873, 0.0711044, 0.797788, 101.202, 0, -33.82 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance19" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.775919, 0.298558, 0.555709, -0.198673, 0.951739, -0.233927, -0.59873, 0.0711044, 0.797788, 157.467, 0, -69.6797 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance18" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.326737, -0.160711, -0.931351, -0.198673, 0.951739, -0.233927, 0.923997, 0.261466, 0.27904, 89.3399, 0, -68.4115 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance17" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.326737, -0.160711, -0.931351, -0.198673, 0.951739, -0.233927, 0.923997, 0.261466, 0.27904, 49.3533, 0, -46.0232 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance16" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.326737, -0.160711, -0.931351, -0.198673, 0.951739, -0.233927, 0.923997, 0.261466, 0.27904, 91.1381, 0, -7.15524 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance15" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.326737, -0.160711, -0.931351, -0.198673, 0.951739, -0.233927, 0.923997, 0.261466, 0.27904, 102.524, 0, -48.3093 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance14" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.326737, -0.160711, -0.931351, -0.198673, 0.951739, -0.233927, 0.923997, 0.261466, 0.27904, 58.0176, 0, -88.0066 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance13" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.326737, -0.160711, -0.931351, -0.198673, 0.951739, -0.233927, 0.923997, 0.261466, 0.27904, 74.5312, 0, -23.362 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance48" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.302437, -0.1675, -0.938336, -0.198673, 0.951739, -0.233927, 0.932234, 0.25717, 0.254564, -124.569, 0, 32.0855 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance47" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.302437, -0.1675, -0.938336, -0.198673, 0.951739, -0.233927, 0.932234, 0.25717, 0.254564, -165.128, 0, 53.4194 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance46" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.302437, -0.1675, -0.938336, -0.198673, 0.951739, -0.233927, 0.932234, 0.25717, 0.254564, -124.375, 0, 93.3679 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance45" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.302437, -0.1675, -0.938336, -0.198673, 0.951739, -0.233927, 0.932234, 0.25717, 0.254564, -111.916, 0, 52.526 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance44" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.302437, -0.1675, -0.938336, -0.198673, 0.951739, -0.233927, 0.932234, 0.25717, 0.254564, -155.367, 0, 11.6772 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance43" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.302437, -0.1675, -0.938336, -0.198673, 0.951739, -0.233927, 0.932234, 0.25717, 0.254564, -140.552, 0, 76.7319 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance42" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.980059, -0.192067, 0.0509242, -0.198673, 0.951739, -0.233927, -0.00353718, -0.23938, -0.97092, -118.802, 0, 12.1577 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance41" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.980059, -0.192067, 0.0509242, -0.198673, 0.951739, -0.233927, -0.00353718, -0.23938, -0.97092, -126.415, 0, -33.0329 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance40" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.980059, -0.192067, 0.0509242, -0.198673, 0.951739, -0.233927, -0.00353718, -0.23938, -0.97092, -177.085, 0, -6.77919 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance39" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.980059, -0.192067, 0.0509242, -0.198673, 0.951739, -0.233927, -0.00353718, -0.23938, -0.97092, -142.17, 0, 17.8015 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance38" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.980059, -0.192067, 0.0509242, -0.198673, 0.951739, -0.233927, -0.00353718, -0.23938, -0.97092, -89.8025, 0, -10.7355 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance37" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.980059, -0.192067, 0.0509242, -0.198673, 0.951739, -0.233927, -0.00353718, -0.23938, -0.97092, -156.232, 0, -16.9578 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance36" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.976938, 0.211366, 0.0302447, -0.198673, 0.951739, -0.233927, -0.078229, 0.222524, 0.971784, -9.1006, 0, 56.4377 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance35" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.976938, 0.211366, 0.0302447, -0.198673, 0.951739, -0.233927, -0.078229, 0.222524, 0.971784, 2.25615, 0, 100.836 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance34" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.976938, 0.211366, 0.0302447, -0.198673, 0.951739, -0.233927, -0.078229, 0.222524, 0.971784, 50.5593, 0, 70.4467 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance33" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.976938, 0.211366, 0.0302447, -0.198673, 0.951739, -0.233927, -0.078229, 0.222524, 0.971784, 13.7153, 0, 48.8642 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance32" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.976938, 0.211366, 0.0302447, -0.198673, 0.951739, -0.233927, -0.078229, 0.222524, 0.971784, -36.0891, 0, 81.6702 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance31" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.976938, 0.211366, 0.0302447, -0.198673, 0.951739, -0.233927, -0.078229, 0.222524, 0.971784, 30.6282, 0, 82.3293 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance30" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.230501, -0.277365, -0.932705, -0.198673, 0.951739, -0.233927, 0.952574, 0.131382, -0.274481, -27.1501, 0, 46.2106 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance29" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.230501, -0.277365, -0.932705, -0.198673, 0.951739, -0.233927, 0.952574, 0.131382, -0.274481, -72.8751, 0, 43.1473 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance28" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.230501, -0.277365, -0.932705, -0.198673, 0.951739, -0.233927, 0.952574, 0.131382, -0.274481, -59.0749, 0, 98.521 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance27" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.230501, -0.277365, -0.932705, -0.198673, 0.951739, -0.233927, 0.952574, 0.131382, -0.274481, -27.0737, 0, 70.2505 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance26" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.230501, -0.277365, -0.932705, -0.198673, 0.951739, -0.233927, 0.952574, 0.131382, -0.274481, -42.7019, 0, 12.6965 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance25" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.230501, -0.277365, -0.932705, -0.198673, 0.951739, -0.233927, 0.952574, 0.131382, -0.274481, -64.1453, 0, 75.8772 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance96" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.765783, -0.00178908, 0.643095, -0.198673, 0.951739, -0.233927, -0.61164, -0.306903, -0.729182, -87.2556, 0, -134.639 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance95" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.765783, -0.00178908, 0.643095, -0.198673, 0.951739, -0.233927, -0.61164, -0.306903, -0.729182, -65.1467, 0, -174.78 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance94" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.765783, -0.00178908, 0.643095, -0.198673, 0.951739, -0.233927, -0.61164, -0.306903, -0.729182, -121.162, 0, -185.687 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance93" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.765783, -0.00178908, 0.643095, -0.198673, 0.951739, -0.233927, -0.61164, -0.306903, -0.729182, -109.073, 0, -144.734 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance92" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.765783, -0.00178908, 0.643095, -0.198673, 0.951739, -0.233927, -0.61164, -0.306903, -0.729182, -50.309, 0, -134.562 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance91" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.765783, -0.00178908, 0.643095, -0.198673, 0.951739, -0.233927, -0.61164, -0.306903, -0.729182, -98.4982, 0, -180.708 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance90" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.820044, 0.292139, 0.49212, -0.198673, 0.951739, -0.233927, -0.536708, 0.0940601, 0.838508, -81.0966, 0, -114.828 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance89" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.820044, 0.292139, 0.49212, -0.198673, 0.951739, -0.233927, -0.536708, 0.0940601, 0.838508, -49.8573, 0, -81.2983 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance88" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.820044, 0.292139, 0.49212, -0.198673, 0.951739, -0.233927, -0.536708, 0.0940601, 0.838508, -22.0175, 0, -131.114 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance87" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.820044, 0.292139, 0.49212, -0.198673, 0.951739, -0.233927, -0.536708, 0.0940601, 0.838508, -64.6979, 0, -132.407 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance86" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.820044, 0.292139, 0.49212, -0.198673, 0.951739, -0.233927, -0.536708, 0.0940601, 0.838508, -92.6975, 0, -79.7504 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance85" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.820044, 0.292139, 0.49212, -0.198673, 0.951739, -0.233927, -0.536708, 0.0940601, 0.838508, -33.8196, 0, -111.135 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance84" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.772416, -0.298967, -0.56035, -0.198673, 0.951739, -0.233927, 0.603243, -0.0693628, -0.794535, -197.051, 0, -91.3848 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance83" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.772416, -0.298967, -0.56035, -0.198673, 0.951739, -0.233927, 0.603243, -0.0693628, -0.794535, -230.978, 0, -122.192 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance82" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.772416, -0.298967, -0.56035, -0.198673, 0.951739, -0.233927, 0.603243, -0.0693628, -0.794535, -254.566, 0, -70.2276 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance81" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.772416, -0.298967, -0.56035, -0.198673, 0.951739, -0.233927, 0.603243, -0.0693628, -0.794535, -211.926, 0, -72.4996 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance80" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.772416, -0.298967, -0.56035, -0.198673, 0.951739, -0.233927, 0.603243, -0.0693628, -0.794535, -188.417, 0, -127.308 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance79" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.772416, -0.298967, -0.56035, -0.198673, 0.951739, -0.233927, 0.603243, -0.0693628, -0.794535, -244.471, 0, -91.1214 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance78" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.332118, 0.159184, 0.929709, -0.198673, 0.951739, -0.233927, -0.922077, -0.262399, -0.284464, -176.353, 0, -92.7867 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance77" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.332118, 0.159184, 0.929709, -0.198673, 0.951739, -0.233927, -0.922077, -0.262399, -0.284464, -136.498, 0, -115.408 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance76" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.332118, 0.159184, 0.929709, -0.198673, 0.951739, -0.233927, -0.922077, -0.262399, -0.284464, -178.508, 0, -154.031 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance75" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.332118, 0.159184, 0.929709, -0.198673, 0.951739, -0.233927, -0.922077, -0.262399, -0.284464, -189.654, 0, -112.812 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance74" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.332118, 0.159184, 0.929709, -0.198673, 0.951739, -0.233927, -0.922077, -0.262399, -0.284464, -144.917, 0, -73.3745 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance73" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.332118, 0.159184, 0.929709, -0.198673, 0.951739, -0.233927, -0.922077, -0.262399, -0.284464, -161.807, 0, -137.922 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance72" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.307867, 0.165998, 0.936836, -0.198673, 0.951739, -0.233927, -0.930455, -0.258142, -0.26003, 36.9662, 0, -194.529 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance71" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.307867, 0.165998, 0.936836, -0.198673, 0.951739, -0.233927, -0.930455, -0.258142, -0.26003, 77.4001, 0, -216.099 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance70" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.307867, 0.165998, 0.936836, -0.198673, 0.951739, -0.233927, -0.930455, -0.258142, -0.26003, 36.4149, 0, -255.809 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance69" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.307867, 0.165998, 0.936836, -0.198673, 0.951739, -0.233927, -0.930455, -0.258142, -0.26003, 24.1939, 0, -214.895 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance68" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.307867, 0.165998, 0.936836, -0.198673, 0.951739, -0.233927, -0.930455, -0.258142, -0.26003, 67.8833, 0, -174.301 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance67" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.307867, 0.165998, 0.936836, -0.198673, 0.951739, -0.233927, -0.930455, -0.258142, -0.26003, 52.6886, 0, -239.268 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance66" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.980063, 0.19346, -0.0452635, -0.198673, 0.951739, -0.233927, -0.00217602, 0.238256, 0.9712, 31.3154, 0, -174.568 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance65" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.980063, 0.19346, -0.0452635, -0.198673, 0.951739, -0.233927, -0.00217602, 0.238256, 0.9712, 39.1923, 0, -129.422 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance64" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.980063, 0.19346, -0.0452635, -0.198673, 0.951739, -0.233927, -0.00217602, 0.238256, 0.9712, 89.7083, 0, -155.971 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance63" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.980063, 0.19346, -0.0452635, -0.198673, 0.951739, -0.233927, -0.00217602, 0.238256, 0.9712, 54.6502, 0, -180.348 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance62" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.980063, 0.19346, -0.0452635, -0.198673, 0.951739, -0.233927, -0.00217602, 0.238256, 0.9712, 2.45013, 0, -151.506 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance61" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.980063, 0.19346, -0.0452635, -0.198673, 0.951739, -0.233927, -0.00217602, 0.238256, 0.9712, 68.915, 0, -145.671 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance60" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.976466, -0.21266, -0.0359091, -0.198673, 0.951739, -0.233927, 0.0839226, -0.221288, -0.971591, -78.642, 0, -218.208 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance59" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.976466, -0.21266, -0.0359091, -0.198673, 0.951739, -0.233927, 0.0839226, -0.221288, -0.971591, -90.2574, 0, -262.539 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance58" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.976466, -0.21266, -0.0359091, -0.198673, 0.951739, -0.233927, 0.0839226, -0.221288, -0.971591, -138.383, 0, -231.869 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance57" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.976466, -0.21266, -0.0359091, -0.198673, 0.951739, -0.233927, 0.0839226, -0.221288, -0.971591, -101.413, 0, -210.501 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance56" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.976466, -0.21266, -0.0359091, -0.198673, 0.951739, -0.233927, 0.0839226, -0.221288, -0.971591, -51.8011, 0, -243.597 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance55" type="MeshInstance" parent="Asteroids"]
-transform = Transform( -0.976466, -0.21266, -0.0359091, -0.198673, 0.951739, -0.233927, 0.0839226, -0.221288, -0.971591, -118.521, 0, -243.867 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance54" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.224944, 0.276594, 0.934289, -0.198673, 0.951739, -0.233927, -0.953902, -0.132997, 0.26904, -60.5332, 0, -208.086 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance53" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.224944, 0.276594, 0.934289, -0.198673, 0.951739, -0.233927, -0.953902, -0.132997, 0.26904, -14.7912, 0, -205.289 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance52" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.224944, 0.276594, 0.934289, -0.198673, 0.951739, -0.233927, -0.953902, -0.132997, 0.26904, -28.9139, 0, -260.581 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance51" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.224944, 0.276594, 0.934289, -0.198673, 0.951739, -0.233927, -0.953902, -0.132997, 0.26904, -60.7497, 0, -232.125 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance50" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.224944, 0.276594, 0.934289, -0.198673, 0.951739, -0.233927, -0.953902, -0.132997, 0.26904, -44.7863, 0, -174.663 )
-mesh = SubResource( 1 )
-material/0 = null
-
-[node name="MeshInstance49" type="MeshInstance" parent="Asteroids"]
-transform = Transform( 0.224944, 0.276594, 0.934289, -0.198673, 0.951739, -0.233927, -0.953902, -0.132997, 0.26904, -23.7116, 0, -237.968 )
-mesh = SubResource( 1 )
-material/0 = null
+[node name="Asteroid" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3877, 0, -25.0279 )
+
+[node name="Asteroid2" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.830275, 0, 0.557354, -0.374321, 0.74091, 0.557616, -0.412949, -0.671604, 0.615159, 27.5332, 0, -4.19472 )
+
+[node name="Asteroid4" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.615758, 0, 0.787936, 0, 1, 0, -0.787936, 0, 0.615758, -37.7856, 0, -17.5603 )
+
+[node name="Asteroid3" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.185871, -0.529181, 0.827901, -0.374321, 0.74091, 0.557616, -0.90848, -0.413545, -0.06037, -10.8129, 0, -18.2416 )
+
+[node name="Asteroid8" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.971105, 0, 0.238652, 0, 1, 0, -0.238652, 0, 0.971105, -7.28239, 0, -43.6135 )
+
+[node name="Asteroid7" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.707733, -0.16028, 0.688058, -0.374321, 0.74091, 0.557616, -0.599164, -0.652198, 0.46437, 14.3396, 0, -27.4742 )
+
+[node name="Asteroid6" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.409923, 0, 0.91212, 0, 1, 0, -0.91212, 0, 0.409923, -52.2815, 0, -24.8651 )
+
+[node name="Asteroid5" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.0363105, -0.612584, 0.789571, -0.374321, 0.74091, 0.557616, -0.926588, -0.275306, -0.256206, -26.2509, 0, -31.9638 )
+
+[node name="Asteroid16" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.772745, 0, -0.634717, 0, 1, 0, 0.634717, 0, 0.772745, -11.4517, 0, 29.9961 )
+
+[node name="Asteroid15" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.903696, 0.426279, 0.0402402, -0.374321, 0.74091, 0.557616, 0.207886, -0.518979, 0.829123, -11.4258, 0, 56.9773 )
+
+[node name="Asteroid14" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.97594, 0, 0.218041, 0, 1, 0, -0.218041, 0, 0.97594, -53.4171, 0, 5.19028 )
+
+[node name="Asteroid13" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.720258, -0.146437, 0.678074, -0.374321, 0.74091, 0.557616, -0.584047, -0.655445, 0.478832, -32.1417, 0, 21.7838 )
+
+[node name="Asteroid12" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.901893, 0, -0.43196, 0, 1, 0, 0.43196, 0, 0.901893, -13.3095, 0, 4.41864 )
+
+[node name="Asteroid11" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.927197, 0.290106, 0.236949, -0.374321, 0.74091, 0.557616, -0.0137904, -0.605715, 0.795562, -6.84518, 0, 30.6141 )
+
+[node name="Asteroid10" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.895704, 0, 0.444651, 0, 1, 0, -0.444651, 0, 0.895704, -59.9823, 0, -9.65529 )
+
+[node name="Asteroid9" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.560062, -0.298629, 0.772755, -0.374321, 0.74091, 0.557616, -0.739063, -0.601559, 0.303173, -35.3615, 0, 1.38129 )
+
+[node name="Asteroid32" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.546146, 0, -0.83769, 0, 1, 0, 0.83769, 0, -0.546146, 63.9333, 0, 0.410042 )
+
+[node name="Asteroid31" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.107528, 0.562596, -0.819709, -0.374321, 0.74091, 0.557616, 0.921044, 0.366794, 0.130923, 37.1176, 0, 3.3947 )
+
+[node name="Asteroid30" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.323752, 0, -0.946142, 0, 1, 0, 0.946142, 0, 0.323752, 83.9874, 0, -44.0226 )
+
+[node name="Asteroid29" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.659512, 0.635433, -0.401583, -0.374321, 0.74091, 0.557616, 0.651865, -0.217433, 0.726495, 69.8271, 0, -21.0558 )
+
+[node name="Asteroid28" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.330448, 0, -0.943824, 0, 1, 0, 0.943824, 0, -0.330448, 89.1527, 0, -4.24151 )
+
+[node name="Asteroid27" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.115388, 0.633876, -0.764779, -0.374321, 0.74091, 0.557616, 0.920092, 0.221931, 0.322766, 63.8242, 0, 5.05653 )
+
+[node name="Asteroid26" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.540196, 0, -0.841539, 0, 1, 0, 0.841539, 0, 0.540196, 98.0234, 0, -52.1762 )
+
+[node name="Asteroid25" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.796024, 0.565181, -0.2166, -0.374321, 0.74091, 0.557616, 0.475635, -0.362798, 0.801342, 89.7534, 0, -26.4937 )
+
+[node name="Asteroid24" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.953727, 0, -0.300672, 0, 1, 0, 0.300672, 0, -0.953727, 29.7677, 0, -47.9357 )
+
+[node name="Asteroid23" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.667694, 0.201933, -0.716525, -0.374321, 0.74091, 0.557616, 0.643482, 0.640527, -0.419113, 7.15165, 0, -62.6497 )
+
+[node name="Asteroid22" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.350354, 0, -0.936617, 0, 1, 0, 0.936617, 0, -0.350354, 73.4666, 0, -69.5421 )
+
+[node name="Asteroid21" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.0958847, 0.629036, -0.77144, -0.374321, 0.74091, 0.557616, 0.922328, 0.2353, 0.306504, 47.9469, 0, -60.7823 )
+
+[node name="Asteroid20" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.854414, 0, -0.519594, 0, 1, 0, 0.519594, 0, -0.854414, 52.2083, 0, -35.5229 )
+
+[node name="Asteroid19" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.494832, 0.348961, -0.795843, -0.374321, 0.74091, 0.557616, 0.784235, 0.573828, -0.236003, 26.7342, 0, -44.4144 )
+
+[node name="Asteroid18" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.116705, 0, -0.993167, 0, 1, 0, 0.993167, 0, -0.116705, 89.4881, 0, -66.9338 )
+
+[node name="Asteroid17" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.31323, 0.667015, -0.676002, -0.374321, 0.74091, 0.557616, 0.872795, 0.0783798, 0.481753, 66.7963, 0, -52.3369 )
+
+[node name="Asteroid64" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -64.2298, 0, -76.4722 )
+
+[node name="Asteroid63" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.830275, 0, 0.557354, -0.374321, 0.74091, 0.557616, -0.412949, -0.671604, 0.615159, -47.0844, 0, -55.6391 )
+
+[node name="Asteroid62" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.615758, 0, 0.787936, 0, 1, 0, -0.787936, 0, 0.615758, -112.403, 0, -69.0046 )
+
+[node name="Asteroid61" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.185871, -0.529181, 0.827901, -0.374321, 0.74091, 0.557616, -0.90848, -0.413545, -0.06037, -85.4304, 0, -69.686 )
+
+[node name="Asteroid60" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.971105, 0, 0.238652, 0, 1, 0, -0.238652, 0, 0.971105, -81.8999, 0, -95.0579 )
+
+[node name="Asteroid59" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.707733, -0.16028, 0.688058, -0.374321, 0.74091, 0.557616, -0.599164, -0.652198, 0.46437, -60.278, 0, -78.9185 )
+
+[node name="Asteroid58" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.409923, 0, 0.91212, 0, 1, 0, -0.91212, 0, 0.409923, -126.899, 0, -76.3094 )
+
+[node name="Asteroid57" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.0363105, -0.612584, 0.789571, -0.374321, 0.74091, 0.557616, -0.926588, -0.275306, -0.256206, -100.868, 0, -83.4082 )
+
+[node name="Asteroid56" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.772745, 0, -0.634717, 0, 1, 0, 0.634717, 0, 0.772745, -86.0692, 0, -21.4483 )
+
+[node name="Asteroid55" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.903696, 0.426279, 0.0402402, -0.374321, 0.74091, 0.557616, 0.207886, -0.518979, 0.829123, -86.0433, 0, 5.53296 )
+
+[node name="Asteroid54" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.97594, 0, 0.218041, 0, 1, 0, -0.218041, 0, 0.97594, -128.035, 0, -46.2541 )
+
+[node name="Asteroid53" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.720258, -0.146437, 0.678074, -0.374321, 0.74091, 0.557616, -0.584047, -0.655445, 0.478832, -106.759, 0, -29.6606 )
+
+[node name="Asteroid52" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.901893, 0, -0.43196, 0, 1, 0, 0.43196, 0, 0.901893, -87.927, 0, -47.0257 )
+
+[node name="Asteroid51" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.927197, 0.290106, 0.236949, -0.374321, 0.74091, 0.557616, -0.0137904, -0.605715, 0.795562, -81.4627, 0, -20.8303 )
+
+[node name="Asteroid50" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.895704, 0, 0.444651, 0, 1, 0, -0.444651, 0, 0.895704, -134.6, 0, -61.0997 )
+
+[node name="Asteroid49" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.560062, -0.298629, 0.772755, -0.374321, 0.74091, 0.557616, -0.739063, -0.601559, 0.303173, -109.979, 0, -50.0631 )
+
+[node name="Asteroid48" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.546146, 0, -0.83769, 0, 1, 0, 0.83769, 0, -0.546146, -10.6842, 0, -51.0343 )
+
+[node name="Asteroid47" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.107528, 0.562596, -0.819709, -0.374321, 0.74091, 0.557616, 0.921044, 0.366794, 0.130923, -37.4999, 0, -48.0497 )
+
+[node name="Asteroid46" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.323752, 0, -0.946142, 0, 1, 0, 0.946142, 0, 0.323752, 9.36983, 0, -95.467 )
+
+[node name="Asteroid45" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.659512, 0.635433, -0.401583, -0.374321, 0.74091, 0.557616, 0.651865, -0.217433, 0.726495, -4.79038, 0, -72.5002 )
+
+[node name="Asteroid44" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.330448, 0, -0.943824, 0, 1, 0, 0.943824, 0, -0.330448, 14.5352, 0, -55.6859 )
+
+[node name="Asteroid43" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.115388, 0.633876, -0.764779, -0.374321, 0.74091, 0.557616, 0.920092, 0.221931, 0.322766, -10.7933, 0, -46.3878 )
+
+[node name="Asteroid42" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.540196, 0, -0.841539, 0, 1, 0, 0.841539, 0, 0.540196, 23.4059, 0, -103.621 )
+
+[node name="Asteroid41" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.796024, 0.565181, -0.2166, -0.374321, 0.74091, 0.557616, 0.475635, -0.362798, 0.801342, 15.1359, 0, -77.938 )
+
+[node name="Asteroid40" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.953727, 0, -0.300672, 0, 1, 0, 0.300672, 0, -0.953727, -44.8498, 0, -99.3801 )
+
+[node name="Asteroid39" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.667694, 0.201933, -0.716525, -0.374321, 0.74091, 0.557616, 0.643482, 0.640527, -0.419113, -67.4659, 0, -114.094 )
+
+[node name="Asteroid38" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.350354, 0, -0.936617, 0, 1, 0, 0.936617, 0, -0.350354, -1.15096, 0, -120.986 )
+
+[node name="Asteroid37" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.0958847, 0.629036, -0.77144, -0.374321, 0.74091, 0.557616, 0.922328, 0.2353, 0.306504, -26.6706, 0, -112.227 )
+
+[node name="Asteroid36" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.854414, 0, -0.519594, 0, 1, 0, 0.519594, 0, -0.854414, -22.4092, 0, -86.9673 )
+
+[node name="Asteroid35" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.494832, 0.348961, -0.795843, -0.374321, 0.74091, 0.557616, 0.784235, 0.573828, -0.236003, -47.8833, 0, -95.8587 )
+
+[node name="Asteroid34" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( -0.116705, 0, -0.993167, 0, 1, 0, 0.993167, 0, -0.116705, 14.8706, 0, -118.378 )
+
+[node name="Asteroid33" parent="Asteroids" instance=ExtResource( 4 )]
+transform = Transform( 0.31323, 0.667015, -0.676002, -0.374321, 0.74091, 0.557616, 0.872795, 0.0783798, 0.481753, -7.82118, 0, -103.781 )

@@ -51,6 +51,10 @@ func change_seat(seat_id):
 
 	next_camera.current = true
 
+func _input(event):
+	if event is InputEventKey && event.scancode == KEY_ESCAPE:
+		get_tree().quit()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

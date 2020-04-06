@@ -48,6 +48,7 @@ text = "Ip"
 margin_top = 64.0
 margin_right = 122.0
 margin_bottom = 88.0
+text = "127.0.0.1"
 
 [node name="HSeparator" type="HSeparator" parent="CenterContainer/VBoxContainer"]
 margin_top = 92.0
